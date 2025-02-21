@@ -32,7 +32,7 @@ export default async function PinnedRepos( ) {
   console.log(repos)
   return (
     <div>
-      <div className="my-2">Pinned repos</div>
+      <div className="my-2 text-xs text-gray-500">All the repos are dynamically fetched using github graphQL API</div>
       <div className="flex flex-wrap w-full gap-4">
         {repos.map((repo: Repository, index: number) => (
           <RepoCard key={index} repo={repo} />
