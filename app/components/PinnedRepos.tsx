@@ -32,10 +32,12 @@ export default async function PinnedRepos( ) {
   console.log(repos)
   return (
     <div>
-      PinnedRepos:
-      {repos.map((repo: Repository, index: number) => (
-        <RepoCard key={index} repo={repo} />
-      ))}
+      <div className="my-2">Pinned repos</div>
+      <div className="flex flex-wrap w-full gap-4">
+        {repos.map((repo: Repository, index: number) => (
+          <RepoCard key={index} repo={repo} />
+        ))}
+      </div>
     </div>
   );
 }
