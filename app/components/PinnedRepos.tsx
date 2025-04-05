@@ -1,5 +1,6 @@
 import { getPinnedRepos } from "../services/get-repo";
 import RepoCard from "./RepoCard";
+import { cn } from "@/lib/utils";
 interface Language {
   name: string;
   id: string;
@@ -27,10 +28,11 @@ export interface Repository {
   };
 }
 
-export default async function PinnedRepos( ) {
+export default async function PinnedRepos({className}: {className?: string}) {
   const repos = await getPinnedRepos("abhitrueprogrammer");
  return (
-    <div>
+    <div id="pinned-repos" className={cn(className)}>
+      <h1 className="font-bold text-xl">Pinned Repos</h1>
       <div className="my-2 text-xs text-gray-500">All the repos are dynamically fetched using github graphQL API</div>
       <div className="flex flex-wrap w-full gap-4">
         {repos.map((repo: Repository, index: number) => (
