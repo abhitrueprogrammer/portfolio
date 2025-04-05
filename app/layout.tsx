@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "./components/AppSidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Abhinav Pant's portfolio",
   description: "A simple portfolio showcase of Abhinav Pant",
-  
+
   openGraph: {
     title: "Abhinav Pant's portfolio",
     description: "A simple portfolio showcase of Abhinav Pant",
@@ -28,7 +30,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  
 };
 
 export default function RootLayout({
@@ -41,7 +42,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} dark antialiased`}
       >
-        {children}
+        <SidebarProvider>
+          <AppSidebar />
+            <main>
+              <SidebarTrigger />
+              {children}
+            </main>
+        </SidebarProvider>
       </body>
     </html>
   );
