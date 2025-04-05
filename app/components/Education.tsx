@@ -18,7 +18,7 @@ export default function Education({className}: {className?: string}) {
   ];
 
   return (
-    <div className={cn(className)}>
+    <div id="education" className={cn(className)}>
       <h2 className="font-bold text-xl mb-4">Education</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {educationData.map((edu, index) => (

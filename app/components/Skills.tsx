@@ -33,7 +33,7 @@ export default function Skills({className}: {className?: string}) {
   };
 
   return (
-    <div className={cn(className)}>
+    <div id="skills" className={cn(className)}>
       <h2 className="font-bold text-xl mb-4">Technical Skills</h2>
       {Object.entries(skills).map(([category, items]) => (
         <div key={category} className="mb-4">

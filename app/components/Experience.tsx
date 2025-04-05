@@ -50,7 +50,7 @@ export default function Experience({className}: {className?: string}) {
   ];
 
   return (
-    <div className={cn(className)}>
+    <div id="experience" className={cn(className)}>
       <h2 className="font-bold text-xl mb-4">Experience</h2>
       <div className="space-y-4 grid grid-cols-2  gap-4">
         {experiences.map((exp, index) => (
