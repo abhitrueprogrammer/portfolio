@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-8 mt-8 ">
-          <Education className="border-b border-white"/>
+          <Education className="border-b pb-7 border-white"/>
           <Experience className="border-b pb-7 border-white"/>
           <Projects className="border-b pb-7 border-white"/>
 
