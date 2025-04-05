@@ -34,7 +34,7 @@ export default async function PinnedRepos({className}: {className?: string}) {
     <div id="pinned-repos" className={cn(className)}>
       <h1 className="font-bold text-xl">Pinned Repos</h1>
       <div className="my-2 text-xs text-gray-500">All the repos are dynamically fetched using github graphQL API</div>
-      <div className="flex flex-wrap w-full gap-4">
+      <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3  w-full gap-4">
         {repos.map((repo: Repository, index: number) => (
           <RepoCard key={index} repo={repo} />
         ))}

@@ -7,7 +7,7 @@ export default function Education({className}: {className?: string}) {
       degree: "Bachelor of Technology",
       institution: "Vellore Institute of Technology, Vellore",
       duration: "2023 - 2027",
-      score: "CGPA: 9.11 (as of April 2025)",
+      score: "CGPA: 9.11 (as of 4th semester)",
     },
     {
       degree: "Senior Secondary",

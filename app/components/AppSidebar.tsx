@@ -1,4 +1,3 @@
-
 import {
   Sidebar,
   SidebarContent,
@@ -8,9 +7,9 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
 
-import { BookOpen, Briefcase, Code, Brain } from "lucide-react"; // Example icons
+import { BookOpen, Briefcase, Code, Brain, AppWindow } from "lucide-react"; // Example icons
 
 const items = [
   {
@@ -23,6 +22,12 @@ const items = [
     url: "#experience",
     icon: Briefcase, // Icon for experience
   },
+  {
+    title: "Projects",
+    url: "#projects",
+    icon: AppWindow, // Icon for repositories
+  },
+
   {
     title: "Pinned Repositories",
     url: "#pinned-repos",
@@ -57,5 +62,5 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-  )
+  );
 }
