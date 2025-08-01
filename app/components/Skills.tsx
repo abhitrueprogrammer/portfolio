@@ -17,10 +17,14 @@ export default function Skills({className}: {className?: string}) {
     ],
     "Frameworks, Libraries, and Tools": [
       "Next.js",
+      "FastAPI",
       "TanStack",
       "Flask",
       "Github",
       "Zustand",
+      "sql model",
+      "docker",
+      "casbin",
     ],
     "Databases and Cloud Services": [
       "MongoDB",
@@ -28,7 +32,6 @@ export default function Skills({className}: {className?: string}) {
       "SQLite",
       "Cloudinary",
       "GitHub Pages",
-      "Netlify",
     ],
   };
 

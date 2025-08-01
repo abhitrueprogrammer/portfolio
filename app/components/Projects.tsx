@@ -6,47 +6,34 @@ import { cn } from "@/lib/utils";
 export default function Projects({ className }: { className?: string }) {
   const experiences = [
     {
-      title: "DEVSOC’25",
+      title: "Papers",
+      duration: "Oct 2024 - Nov 2024",
+      description:
+        "Major contributor and project maintainer in papers.codechefvit.com, a platform providing VIT students access to previous year question papers, achieving nearly 10k active users during exam seasons. Designed the architecture to ensure papers are maintained and updated efficiently.",
+      tech: ["Next.js", "MongoDB", "Cloudinary", "TypeScript", "Shadcn", "Tanstack"],
+      impact: "10k active users during exams.",
+    },
+    {
+      title: "DEVSOC'25",
       duration: "Jan 2025 - Jan 2025",
       description:
-        "Built Registration and Admin Portals for participant management.",
+        "Developed Registration Portal and Admin Portal to facilitate seamless participant management and convey information efficiently. These platforms helped manage over 1000 participants and streamline event operations.",
       tech: ["Next.js", "TypeScript", "Shadcn", "Zustand", "Tanstack"],
       impact: "Managed 1000+ participants.",
     },
     {
-      title: "Papers",
-      duration: "Oct 2024 - Nov 2024",
-      description:
-        "Contributed to papers.codechefvit.com, a question paper platform.",
-      tech: [
-        "Next.js",
-        "MongoDB",
-        "Cloudinary",
-        "TypeScript",
-        "Shadcn",
-        "Tanstack",
-      ],
-      impact: "10k active users during exams.",
-    },
-    {
       title: "Cookoff Admin Portal",
       duration: "Sept 2024 - Nov 2024",
-      description: "Admin portal for Cookoff coding event.",
+      description: "Cookoff is an annual competitive coding event by CodeChef club, VIT. Admin portal was used as a frontend by the event organizers to manage users, questions and testcases.",
       tech: ["Next.js", "TypeScript", "Tanstack", "Tailwind CSS", "Shadcn"],
-    },
-    {
-      title: "FFCS Combogen",
-      company: "Project",
-      duration: "Nov 2024 - Nov 2024",
-      description: "Mock timetable generator for FFCS allotment.",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      impact: "Deployed at cookoff24-admin.codechefvit.com",
     },
   ];
 
   return (
     <div id="projects" className={cn(className)}>
       <h2 className="font-bold text-xl mb-4">Projects</h2>
-      <div className="space-y-4 grid grid-cols-2  gap-4">
+      <div className="space-y-4 grid grid-cols-1 gap-4">
         {experiences.map((exp, index) => (
           <Card key={index} className="border-none shadow-none">
             <CardHeader className="p-0">

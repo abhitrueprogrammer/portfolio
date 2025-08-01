@@ -5,6 +5,8 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
+
 export default function Home() {
   const name = "abhinav pant";
 
@@ -39,6 +41,7 @@ export default function Home() {
           <Education className="border-b pb-7 border-white"/>
           <Experience className="border-b pb-7 border-white"/>
           <Projects className="border-b pb-7 border-white"/>
+          <Certifications className="border-b pb-7 border-white"/>
 
           <div className="flex gap-4 border-b border-white flex-wrap">
             <PinnedRepos className=" pb-6"/>

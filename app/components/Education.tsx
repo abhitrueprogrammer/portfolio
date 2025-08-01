@@ -4,16 +4,11 @@ import React from "react";
 export default function Education({className}: {className?: string}) {
   const educationData = [
     {
-      degree: "Bachelor of Technology",
-      institution: "Vellore Institute of Technology, Vellore",
-      duration: "2023 - 2027",
-      score: "CGPA: 9.11 (as of 4th semester)",
-    },
-    {
-      degree: "Senior Secondary",
-      institution: "Aryaman Vikram Birla Institute of learning, Haldwani",
-      duration: " - 2022",
-      score: "Percentage: 92%",
+      degree: "B. Tech in Computer Science and Engineering",
+      institution: "Vellore Institute of Technology",
+      location: "Vellore, Tamil Nadu, India",
+      duration: "2023 - Current",
+      score: "CGPA: 9.08",
     },
   ];
 
@@ -25,6 +20,7 @@ export default function Education({className}: {className?: string}) {
           <div key={index} className="space-y-1 pb-4 last:pb-0">
             <h3 className="font-semibold text-sm">{edu.degree}</h3>
             <p className="text-sm">{edu.institution}</p>
+            <p className="text-sm">{edu.location}</p>
             <p className="text-sm">{edu.duration}</p>
             <p className="text-sm">{edu.score}</p>
           </div>
