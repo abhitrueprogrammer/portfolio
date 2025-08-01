@@ -7,7 +7,6 @@ export default function Projects({ className }: { className?: string }) {
   const experiences = [
     {
       title: "Papers",
-      duration: "Oct 2024 - Nov 2024",
       description:
         "Major contributor and project maintainer in papers.codechefvit.com, a platform providing VIT students access to previous year question papers, achieving nearly 10k active users during exam seasons. Designed the architecture to ensure papers are maintained and updated efficiently.",
       tech: ["Next.js", "MongoDB", "Cloudinary", "TypeScript", "Shadcn", "Tanstack"],
@@ -15,7 +14,6 @@ export default function Projects({ className }: { className?: string }) {
     },
     {
       title: "DEVSOC'25",
-      duration: "Jan 2025 - Jan 2025",
       description:
         "Developed Registration Portal and Admin Portal to facilitate seamless participant management and convey information efficiently. These platforms helped manage over 1000 participants and streamline event operations.",
       tech: ["Next.js", "TypeScript", "Shadcn", "Zustand", "Tanstack"],
@@ -23,7 +21,6 @@ export default function Projects({ className }: { className?: string }) {
     },
     {
       title: "Cookoff Admin Portal",
-      duration: "Sept 2024 - Nov 2024",
       description: "Cookoff is an annual competitive coding event by CodeChef club, VIT. Admin portal was used as a frontend by the event organizers to manage users, questions and testcases.",
       tech: ["Next.js", "TypeScript", "Tanstack", "Tailwind CSS", "Shadcn"],
       impact: "Deployed at cookoff24-admin.codechefvit.com",
@@ -42,7 +39,6 @@ export default function Projects({ className }: { className?: string }) {
               </CardTitle>
             </CardHeader>
             <CardContent className="p-0 text-sm ">
-              <p className="text-gray-500 text-xs">{exp.duration}</p>
               <p className="text-gray-300">{exp.description}</p>
               {exp.tech && (
                 <div className="flex flex-wrap gap-1 mt-1">
