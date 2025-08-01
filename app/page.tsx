@@ -41,12 +41,12 @@ export default function Home() {
           <Education className="border-b pb-7 border-white"/>
           <Experience className="border-b pb-7 border-white"/>
           <Projects className="border-b pb-7 border-white"/>
-          <Certifications className="border-b pb-7 border-white"/>
 
           <div className="flex gap-4 border-b border-white flex-wrap">
             <PinnedRepos className=" pb-6"/>
           </div>
-          <Skills />
+          <Skills className="border-b pb-7 border-white"/>
+          <Certifications />
         </div>
       </div>
     </div>

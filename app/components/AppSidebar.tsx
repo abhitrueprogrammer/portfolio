@@ -9,7 +9,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
-import { BookOpen, Briefcase, Code, Brain, AppWindow } from "lucide-react"; // Example icons
+import { BookOpen, Briefcase, Code, Brain, AppWindow, Award } from "lucide-react"; // Example icons
 
 const items = [
   {
@@ -27,7 +27,6 @@ const items = [
     url: "#projects",
     icon: AppWindow, // Icon for repositories
   },
-
   {
     title: "Pinned Repositories",
     url: "#pinned-repos",
@@ -37,6 +36,11 @@ const items = [
     title: "Skills",
     url: "#skills",
     icon: Brain, // Icon for skills
+  },
+  {
+    title: "Certifications & Responsibilities",
+    url: "#certifications",
+    icon: Award, // Icon for certifications
   },
 ];
 export function AppSidebar() {

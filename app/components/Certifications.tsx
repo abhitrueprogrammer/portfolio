@@ -1,12 +1,14 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Certifications({className}: {className?: string}) {
   const certifications = [
     {
       title: "CS50x",
       type: "Certification",
+      link: "https://certificates.cs50.io/6690d02d-8c10-4672-af1c-9ee1ce10528a.pdf?size=letter",
     },
   ];
 
@@ -14,6 +16,7 @@ export default function Certifications({className}: {className?: string}) {
     {
       title: "Open Source Contribution",
       description: "Contributed code to excalidraw, an open source repository with over 102K stars.",
+      link: "https://github.com/excalidraw/excalidraw/pull/9109",
     },
     {
       title: "Projects Head, CodeChef-VIT",
@@ -30,7 +33,18 @@ export default function Certifications({className}: {className?: string}) {
         <div className="space-y-2">
           {certifications.map((cert, index) => (
             <div key={index} className="text-sm">
-              <span className="font-medium">{cert.title}</span>
+              {cert.link ? (
+                <Link 
+                  href={cert.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-medium text-blue-400 hover:text-blue-300 underline"
+                >
+                  {cert.title}
+                </Link>
+              ) : (
+                <span className="font-medium">{cert.title}</span>
+              )}
             </div>
           ))}
         </div>
@@ -43,7 +57,18 @@ export default function Certifications({className}: {className?: string}) {
             <Card key={index} className="border-none shadow-none">
               <CardHeader className="p-0">
                 <CardTitle className="text-sm font-semibold">
-                  {item.title}
+                  {item.link ? (
+                    <Link 
+                      href={item.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 underline"
+                    >
+                      {item.title}
+                    </Link>
+                  ) : (
+                    item.title
+                  )}
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-0 text-sm">
