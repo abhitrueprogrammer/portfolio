@@ -7,20 +7,20 @@ export default function Experience({className}: {className?: string}) {
     {
       title: "Full Stack Engineer Intern",
       company: "KenomeAI",
-      duration: "May 2025 - Current",
-      description: "Developed the core product and website for KenomeAI, empowering enterprises to create, deploy, and manage AI agents at scale. Used RBAC and SSO to authenticate users and wrote protected routes to access data and database tables to store the data.",
+      duration: "May 2025 - Jul 2025",
+      description: "Developed the core product and website for KenomeAI, empowering enterprises to create, deploy, and manage AI agents at scale. Used RBAC and SSO to authenticate users and wrote protected routes to access data and database tables to store the data resulting in improved security of the platform.",
     },
     {
       title: "Junior Developer",
       company: "Stravah",
-      duration: "Feb 2025 - Current",
-      description: "Creating the frontend for Almond, a platform for fraudulent transaction detection. Focused on improving user experience by enabling optimistic updates and efficient data fetching.",
+      duration: "Feb 2025 - Aug 2025",
+      description: "Created and integrated the frontend for almond, a platform for fraudulent transaction detection. Improved user experience by enabling efficient data fetching.",
     },
     {
       title: "SDE Intern",
       company: "The Ethnic Tribe",
       duration: "Feb 2025 - May 2025",
-      description: "Maintained an ecommerce website by fixing technical bugs and enhancing code quality.",
+      description: "Maintained and improved the frontend of an e-commerce website with focus on refactoring and organizing the code.",
     },
   ];
 

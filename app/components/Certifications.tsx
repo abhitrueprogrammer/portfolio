@@ -19,7 +19,7 @@ export default function Certifications({className}: {className?: string}) {
       link: "https://github.com/excalidraw/excalidraw/pull/9109",
     },
     {
-      title: "Projects Head, CodeChef-VIT",
+      title: "Projects Lead, CodeChef-VIT",
       description: "Planning and organizing projects to ensure timely completion while mentoring members and ensuring high code quality through PR reviews.",
     },
   ];

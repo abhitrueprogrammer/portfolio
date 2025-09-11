@@ -25,7 +25,9 @@ export default function RepoCard({ repo }: RepoCardProps) {
         </CardHeader>
         <CardContent>
           {repo.description ? (
-            <p className="text-sm text-muted-foreground mb-2">{repo.description}</p>
+<p className="text-sm text-muted-foreground mb-2 line-clamp-1">
+  {repo.description}
+</p>
           ) : (
             <p className="text-sm italic text-muted-foreground mb-2">
               No description provided.
