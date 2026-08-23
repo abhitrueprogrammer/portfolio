@@ -17,21 +17,23 @@ export default function Skills({className}: {className?: string}) {
     ],
     "Frameworks, Libraries, and Tools": [
       "Next.js",
+      ".NET",
       "FastAPI",
+      "Git",
       "TanStack",
       "Flask",
       "Github",
       "Zustand",
-      "sql model",
-      "docker",
-      "casbin",
+      "Docker",
+      "Casbin",
+      "Spring Boot",
     ],
     "Databases and Cloud Services": [
       "MongoDB",
+      "AWS",
       "Vercel",
       "SQLite",
       "Cloudinary",
-      "GitHub Pages",
     ],
   };
 

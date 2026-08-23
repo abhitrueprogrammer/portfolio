@@ -5,22 +5,28 @@ import { cn } from "@/lib/utils";
 export default function Experience({className}: {className?: string}) {
   const experiences = [
     {
+      title: "AI/ML Intern",
+      company: "AVEVA",
+      duration: "Jun 2026 - Jul 2026",
+      description: "Designed and implemented Model Context Protocol (MCP)-based AI integrations for AVEVA Enterprise Resource Management using C# and .NET.",
+    },
+    {
       title: "Full Stack Engineer Intern",
       company: "KenomeAI",
       duration: "May 2025 - Jul 2025",
-      description: "Developed the core product and website for KenomeAI, empowering enterprises to create, deploy, and manage AI agents at scale. Used RBAC and SSO to authenticate users and wrote protected routes to access data and database tables to store the data resulting in improved security of the platform.",
+      description: "Developed the core product and website for KenomeAI, empowering enterprises to create, deploy, and manage AI agents at scale. Implemented RBAC, SSO, and protected routes to improve platform security.",
     },
     {
       title: "Junior Developer",
       company: "Stravah",
       duration: "Feb 2025 - Aug 2025",
-      description: "Created and integrated the frontend for almond, a platform for fraudulent transaction detection. Improved user experience by enabling efficient data fetching.",
+      description: "Created and integrated the frontend for Almond, a platform for fraudulent transaction detection. Improved user experience through efficient data fetching.",
     },
     {
-      title: "SDE Intern",
-      company: "The Ethnic Tribe",
+      title: "Frontend Developer",
+      company: "Freelance",
       duration: "Feb 2025 - May 2025",
-      description: "Maintained and improved the frontend of an e-commerce website with focus on refactoring and organizing the code.",
+      description: "Refactored The Ethnic Tribe's e-commerce frontend, built a SignWell-integrated landing page for Peritys, and developed De'Hamray Jamshedpur's hotel website with booking, gallery, and Google Reviews integrations.",
     },
   ];
 

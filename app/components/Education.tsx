@@ -8,7 +8,7 @@ export default function Education({className}: {className?: string}) {
       institution: "Vellore Institute of Technology",
       location: "Vellore, Tamil Nadu, India",
       duration: "2023 - Current",
-      score: "CGPA: 9.08",
+      score: "CGPA: 8.88",
     },
   ];
 

@@ -8,9 +8,9 @@ export default function Projects({ className }: { className?: string }) {
     {
       title: "Papers",
       description:
-        "Major contributor and project maintainer of papers.codechefvit.com a platform providing VIT students access to previous year question papers,achieving nearly +20k active users during exam seasons.github. Designed the architecture and flow to ensure papers are maintained and updated efficiently.",
+        "Major contributor and project maintainer of papers.codechefvit.com, providing VIT students access to previous-year question papers. Designed the architecture and flow to keep papers maintained and updated efficiently.",
       tech: ["Next.js", "MongoDB", "cloudinary", "TypeScript", "Shadcn", "Tanstack"],
-      impact: "+20k active users during exams.",
+      impact: "Nearly 45k active users during exam seasons.",
     },
     {
       title: "DEVSOC’25",
@@ -20,10 +20,10 @@ export default function Projects({ className }: { className?: string }) {
       impact: "Managed 1000+ participants.",
     },
     {
-      title: "Cookoff admin portal",
-      description: "Cookoff is annual an annual competitive coding event by CodeChef club, VIT. The project is available on github and deployed at cookoff24-admin.codechefvit.com. Admin portal was used as a frontend by the event organizers to manage users, questions and testcases.",
-      tech: ["Next.js", "TypeScript", "Tanstack", "Tailwind CSS", "Shadcn"],
-      impact: "Deployed at cookoff24-admin.codechefvit.com",
+      title: "GitGaze",
+      description: "Built a backend for real-time GitHub analytics and contributor leaderboards using the GitHub API, MySQL, Redis, JWT, and Spring Boot.",
+      tech: ["Java 21", "Spring Boot", "Redis", "MySQL"],
+      impact: "Real-time analytics and contributor leaderboards.",
     },
   ];
 
